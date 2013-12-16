@@ -22,7 +22,7 @@ include_recipe 'vim'
 
 gvim_pkg = value_for_platform_family(
   # NOTE: vim-gtk is preferred to vim-gnome requires gnome dependencies
-  ['debian'] => 'vim-gtk'
+  ['debian'] => 'vim-gtk',
   ['fedora', 'rhel'] => 'vim-x11',
   ['mac_os_x'] => 'macvim'
 )
